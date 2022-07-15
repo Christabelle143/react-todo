@@ -2,7 +2,7 @@
 import React from "react";
 import "./TodoItem.css";
 
-class TodoItem extends React.Component {
+class TodoItem extends React.PureComponent {
   render() {
     const { completed, id, title } = this.props.todo;
 

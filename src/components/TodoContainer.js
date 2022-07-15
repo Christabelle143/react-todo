@@ -5,7 +5,7 @@ import TodoList from "./TodoList";
 import Header from "./Header";
 import InputTodo from "./InputTodo";
 
-class TodoContainer extends React.Component {
+class TodoContainer extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
