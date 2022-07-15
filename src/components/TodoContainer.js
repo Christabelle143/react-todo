@@ -48,7 +48,6 @@ class TodoContainer extends React.Component {
 
   addTodoItem = (title) => {
     const newTodo = {
-      // id: uuid.v4(),
       id: uuidv4(),
       title,
       completed: false,
