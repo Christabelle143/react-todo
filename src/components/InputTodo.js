@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from "react";
 
-class InputTodo extends React.Component {
+class InputTodo extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {

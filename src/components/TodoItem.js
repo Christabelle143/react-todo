@@ -1,8 +1,8 @@
 /* eslint-disable */
-import React from "react";
-import "./TodoItem.css";
+import React from 'react';
 
-class TodoItem extends React.Component {
+
+class TodoItem extends React.PureComponent {
   render() {
     const { completed, id, title } = this.props.todo;
 
@@ -14,7 +14,7 @@ class TodoItem extends React.Component {
           onChange={() => this.props.handleChangeProps(id)}
         />
         <button onClick={() => this.props.deleteTodoProps(id)}>Delete</button>
-        <span className={completed ? "completed" : ""}>{title}</span>
+        <span className={completed ? 'completed' : ''}>{title}</span>
       </li>
     );
   }
