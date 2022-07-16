@@ -72,5 +72,3 @@ class TodoContainer extends React.PureComponent {
   }
 }
 export default TodoContainer;
-
-

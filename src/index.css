@@ -7,72 +7,90 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.4;
-  color: #1f1f1f;
-  background-color: #15082a;
+  color: #444;
+  background: #fff;
+  height: 100vh;
 }
 
 .container {
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
   margin: 0 auto;
-  padding: 0 10px;
-  padding: 50px;
-  margin-top: 100px;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(46, 46, 46, 0.701);
+}
+
+.inner {
+  width: 100%;
+  padding: 8rem 10px 4rem;
 }
 
 .form-container {
-  display: flex;
   width: 100%;
-  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: calc(0.5 * 100px);
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.38);
+  justify-content: space-evenly;
 }
 
 .input-text {
-  flex: 8;
-  font-size: 14px;
-  padding: 12px 15px;
-  border: 1px solid #cecece;
-  outline: none;
+  font-size: 1rem;
   font-weight: 400;
-  max-width: 80%;
-  border-radius: 8px 0 0 8px;
+  width: 85%;
+  padding-right: 5px;
+  padding-left: 10px;
+  border-radius: calc(0.5 * 100px);
 }
 
 .input-text::placeholder {
-  color: #999;
+  color: #000;
 }
 
 .input-submit {
-  flex: 2;
-  border: none;
-  background: #4803c0;
-  color: #fff;
-  text-transform: uppercase;
+  background: transparent;
+  color: #5b5b5b;
+  text-transform: capitalize;
   cursor: pointer;
   font-weight: 600;
-  width: 20%;
-  outline: none;
-  border-radius: 0 8px 8px 0;
+  margin-right: 10px;
 }
 
-.todo-item {
+.input-text,
+.input-submit {
+  height: 45px;
+  outline: none;
+  border: none;
+}
+
+.item {
+  font-size: 1.2rem;
   list-style-type: none;
   padding: 17px 0;
   border-bottom: 1px solid #eaeaea;
 }
 
-.todo-item input {
+.checkbox {
   margin-right: 15px;
 }
 
-.todo-item button {
-  background: #d3230f;
-  color: #fff;
-  border: 1px solid #d3230f;
-  padding: 3px 7px;
+.item button {
+  font-size: 13px;
+  background: #f1f3f4;
+  border: none;
   cursor: pointer;
   float: right;
   outline: none;
-  border-radius: 8px;
+  border-radius: 100px;
+  height: 50px;
+  width: 50px;
+  margin: -10px 0 0 10px;
+}
+
+.completed {
+  font-style: italic;
+  color: #4a4a4a;
+  opacity: 0.4;
+  text-decoration: line-through;
 }
